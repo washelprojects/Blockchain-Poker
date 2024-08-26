@@ -47,15 +47,4 @@ class Block:
                 block_with_header = b"BLOCK:" + block_data
                 # print("Block mined with hash: ", self.hash)
                 return block_with_header
-            
-
-
-
-
-    # def calculate_hash(self):
-    #     while True:
-    #         encoded_block = f"{self.number}{self.nonce}{self.data}{self.previous_hash}{self.hash}".encode()
-    #         try_hash = hashlib.sha256(encoded_block).hexdigest()
-    #         if self.hash.startswith("00"):
-    #             self.hash = try_hash
     

@@ -281,10 +281,3 @@ if __name__ == "__main__":
             node_thread.join(timeout = 5)
             receive_thread.join(timeout = 5)
             print("Joined Threads... Exiting Program")
-            
-        # except:
-        #     node_thread.join()
-        #     receive_thread.join()
-        #     print("Closing connection to tracker...")
-        #     peer.node_socket.close()
-        #     print("Connection closed.")
